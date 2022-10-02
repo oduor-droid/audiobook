@@ -18,7 +18,7 @@ def process_audio():
     """Prompting user for file to be converted to audio"""
     file_types = [('All files', '*'), ('PDF files', '.pdf'), ('Text files', '.txt'), ('Open files', '.odt'),
                   ('Office files', '.docx')]
-    bk = filedialog.askopenfilename(initialdir='/home/oduor/Desktop', filetypes=file_types)
+    bk = filedialog.askopenfilename(filetypes=file_types)
     path = pathlib.Path(bk)  # handles file path
 
     """Handling Files"""
