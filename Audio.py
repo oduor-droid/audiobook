@@ -49,8 +49,8 @@ def process_audio():
             audio_reader = pyttsx3.init()
             audio_reader.setProperty("rate", 140)
             audio_reader.setProperty("voice", 'english_rp+f3')  # setting female voice
-
             audio_reader.say(cont)
+            audio_reader.runAndWait()
 
     elif path.suffix == '.txt':
         with open(bk) as f:
